@@ -1,0 +1,457 @@
+E:\example>flutter run --verbose
+[   +1 ms] executing: [C:\src\flutter/] git -c log.showSignature=false log -n 1 --pretty=format:%H
+[  +95 ms] Exit code 0 from: git -c log.showSignature=false log -n 1 --pretty=format:%H
+[        ] f468f3366c26a5092eb964a230ce7892fda8f2f8
+[        ] executing: [C:\src\flutter/] git tag --points-at f468f3366c26a5092eb964a230ce7892fda8f2f8
+[ +118 ms] Exit code 0 from: git tag --points-at f468f3366c26a5092eb964a230ce7892fda8f2f8
+[   +1 ms] 3.10.6
+[   +1 ms] executing: [C:\src\flutter/] git rev-parse --abbrev-ref HEAD
+[  +88 ms] Exit code 0 from: git rev-parse --abbrev-ref HEAD
+[        ] stable
+[  +36 ms] executing: [C:\src\flutter/] git rev-parse --abbrev-ref --symbolic @{upstream}
+[  +89 ms] Exit code 0 from: git rev-parse --abbrev-ref --symbolic @{upstream}
+[        ] origin/stable
+[        ] executing: [C:\src\flutter/] git ls-remote --get-url origin
+[  +86 ms] Exit code 0 from: git ls-remote --get-url origin
+[        ] https://github.com/flutter/flutter.git
+[ +122 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +30 ms] executing: C:\Users\***\AppData\Local\Android\sdk\platform-tools\adb.exe devices -l
+[ +110 ms] List of devices attached
+[   +4 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +36 ms] Connected devices:
+[  +40 ms] Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.19045.3324]
+[        ] Chrome (web)      • chrome  • web-javascript • Google Chrome 115.0.5790.171
+[        ] Edge (web)        • edge    • web-javascript • Microsoft Edge 114.0.1823.82
+[        ] [1]: Windows (windows)
+[        ] [2]: Chrome (chrome)
+[        ] [3]: Edge (edge)
+[        ] Please choose one (or "q" to quit)
+[        ] : 
+[+8996 ms] 1
+[   +7 ms] Skipping pub get: version match.
+[  +77 ms] Generating E:\example\android\app\src\main\java\io\flutter\plugins\GeneratedPluginRegistrant.java
+[ +118 ms] Initializing file store
+[   +8 ms] Skipping target: gen_localizations
+[   +3 ms] gen_dart_plugin_registrant: Starting due to {InvalidatedReasonKind.inputChanged: The following inputs have updated contents:
+E:\example\.dart_tool\package_config_subset}
+[  +21 ms] gen_dart_plugin_registrant: Complete
+[   +1 ms] _composite: Starting due to {}
+[        ] _composite: Complete
+[   +4 ms] complete
+[   +3 ms] Launching lib\main.dart on Windows in debug mode...
+[   +2 ms] C:\src\flutter\bin\cache\dart-sdk\bin\dart.exe --disable-dart-dev C:\src\flutter\bin\cache\dart-sdk\bin\snapshots\frontend_server.dart.snapshot --sdk-root     
+C:\src\flutter\bin\cache\artifacts\engine\common\flutter_patched_sdk/ --incremental --target=flutter --experimental-emit-debug-metadata -DFLUTTER_WEB_AUTO_DETECT=true    
+-DFLUTTER_WEB_CANVASKIT_URL=https://www.gstatic.com/flutter-canvaskit/cdbeda788a293fa29665dc3fa3d6e63bd221cb0d/ --output-dill
+C:\Users\***\AppData\Local\Temp\flutter_tools.8517b2d9\flutter_tool.a8b7f6d3\app.dill --packages E:\example\.dart_tool\package_config.json -Ddart.vm.profile=false      
+-Ddart.vm.product=false --enable-asserts --track-widget-creation --filesystem-scheme org-dartlang-root --initialize-from-dill
+build\ade00fc64fa695e0daed02c1105f6d67.cache.dill.track.dill --verbosity=error --enable-experiment=alternative-invalidation-strategy
+[  +15 ms] executing: C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe -format json -products * -utf8 -latest -version 16 -requires
+Microsoft.VisualStudio.Workload.NativeDesktop Microsoft.VisualStudio.Component.VC.Tools.x86.x64 Microsoft.VisualStudio.Component.VC.CMake.Project
+[  +61 ms] Exit code 0 from: C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe -format json -products * -utf8 -latest -version 16 -requires
+Microsoft.VisualStudio.Workload.NativeDesktop Microsoft.VisualStudio.Component.VC.Tools.x86.x64 Microsoft.VisualStudio.Component.VC.CMake.Project
+[        ] [
+             {
+               "instanceId": "cfe633dc",
+               "installDate": "2022-08-10T11:36:38Z",
+               "installationName": "VisualStudio/17.4.2+33122.133",
+               "installationPath": "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community",
+               "installationVersion": "17.4.33122.133",
+               "productId": "Microsoft.VisualStudio.Product.Community",
+               "productPath": "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\devenv.exe",
+               "state": 4294967295,
+               "isComplete": true,
+               "isLaunchable": true,
+               "isPrerelease": false,
+               "isRebootRequired": false,
+               "displayName": "Visual Studio Community 2022",
+               "description": "学生、オープンソースの共同作成者、個人用の無料で強力な IDE",
+               "channelId": "VisualStudio.17.Release",
+               "channelUri": "https://aka.ms/vs/17/release/channel",
+               "enginePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\resources\\app\\ServiceHub\\Services\\Microsoft.VisualStudio.Setup.Service",   
+               "installedChannelId": "VisualStudio.17.Release",
+               "installedChannelUri": "https://aka.ms/vs/17/release/channel",
+               "releaseNotes": "https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.4#17.4.2",
+               "thirdPartyNotices": "https://go.microsoft.com/fwlink/?LinkId=661288",
+               "updateDate": "2022-12-11T06:51:48.7319212Z",
+               "catalog": {
+                 "buildBranch": "d17.4",
+                 "buildVersion": "17.4.33122.133",
+                 "id": "VisualStudio/17.4.2+33122.133",
+                 "localBuild": "build-lab",
+                 "manifestName": "VisualStudio",
+                 "manifestType": "installer",
+                 "productDisplayVersion": "17.4.2",
+                 "productLine": "Dev17",
+                 "productLineVersion": "2022",
+                 "productMilestone": "RTW",
+                 "productMilestoneIsPreRelease": "False",
+                 "productName": "Visual Studio",
+                 "productPatchVersion": "2",
+                 "productPreReleaseMilestoneSuffix": "1.0",
+                 "productSemanticVersion": "17.4.2+33122.133",
+                 "requiredEngineVersion": "3.4.2244.14676"
+               },
+               "properties": {
+                 "campaignId": "2030:48202b3aee4545db886a1a281b9e99f2",
+                 "channelManifestId": "VisualStudio.17.Release/17.4.2+33122.133",
+                 "nickname": "",
+                 "setupEngineFilePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\setup.exe"
+               }
+             }
+           ]
+[   +4 ms] Building Windows application...
+[ +326 ms] <- compile package:example/main.dart
+[  +20 ms] executing: E:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -S E:\example\windows -B
+build\windows -G Visual Studio 17 2022
+[ +482 ms] -- Selecting Windows SDK version 10.0.22000.0 to target Windows 10.0.19045.
+[+3097 ms] -- The CXX compiler identification is MSVC 19.34.31935.0
+[ +441 ms] -- Detecting CXX compiler ABI info
+[ +977 ms] -- Detecting CXX compiler ABI info - done
+[   +1 ms] -- Check for working CXX compiler: E:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/cl.exe - skipped
+[  +20 ms] -- Detecting CXX compile features
+[  +30 ms] -- Detecting CXX compile features - done
+[   +5 ms] -- Configuring done
+[  +79 ms] -- Generating done
+[  +13 ms] -- Build files have been written to: E:/example/build/windows
+[   +6 ms] executing: E:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --build build\windows
+--config Debug --target INSTALL --verbose
+[ +291 ms] MSBuild version 17.4.0+18d5aef85 for .NET Framework
+[  +30 ms] 2023/08/16 22:20:28 �Ƀr���h���J�n���܂����B
+[ +129 ms] �m�[�h 1 ��̃v���W�F�N�g "E:\example\build\windows\INSTALL.vcxproj" (����̃^�[�Q�b�g)�B
+[   +1 ms] �v���W�F�N�g "E:\example\build\windows\INSTALL.vcxproj" (1) �́A�m�[�h 1 ��� "E:\example\build\windows\ZERO_CHECK.vcxproj" (2) ���r���h���Ă��܂�
+(����̃^�[�Q�b�g)�B
+[   +1 ms] PrepareForBuild:
+[        ]   �f�B���N�g�� "x64\Debug\ZERO_CHECK\" ���쐬���Ă��܂��B
+[        ]   �f�B���N�g�� "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\" ���쐬���Ă��܂��B
+[   +8 ms] InitializeBuildStatus:
+[        ]   "AlwaysCreate" ���w�肳�ꂽ���� "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild" ���쐬���Ă��܂��B
+[  +89 ms] CustomBuild:
+[        ]   Checking Build System
+[ +123 ms] FinalizeBuildStatus:
+[        ]   �t�@�C�� "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild" ���폜���Ă��܂��B
+[        ]   "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\ZERO_CHECK.lastbuildstate" �̃^�b�` �^�X�N�����s���Ă��܂��B
+[        ] �v���W�F�N�g "E:\example\build\windows\ZERO_CHECK.vcxproj" (����̃^�[�Q�b�g) �̃r���h���������܂����B
+[  +54 ms] �v���W�F�N�g "E:\example\build\windows\INSTALL.vcxproj" (1) �́A�m�[�h 1 ��� "E:\example\build\windows\ALL_BUILD.vcxproj" (3) ���r���h���Ă��܂�
+(����̃^�[�Q�b�g)�B
+[        ] �v���W�F�N�g "E:\example\build\windows\ALL_BUILD.vcxproj" (3) �́A�m�[�h 1 ��� "E:\example\build\windows\runner\example.vcxproj" (4) ���r���h���Ă��܂�
+(����̃^�[�Q�b�g)�B
+[        ] �v���W�F�N�g "E:\example\build\windows\runner\example.vcxproj" (4) �́A�m�[�h 1 ��� "E:\example\build\windows\flutter\flutter_assemble.vcxproj" (5)
+���r���h���Ă��܂� (����̃^�[�Q�b�g)�B
+[        ] PrepareForBuild:
+[        ]   �f�B���N�g�� "x64\Debug\flutter_assemble\" ���쐬���Ă��܂��B
+[        ]   �f�B���N�g�� "x64\Debug\flutter_assemble\flutter_assemble.tlog\" ���쐬���Ă��܂��B
+[  +16 ms] InitializeBuildStatus:
+[        ]   "AlwaysCreate" ���w�肳�ꂽ���� "x64\Debug\flutter_assemble\flutter_assemble.tlog\unsuccessfulbuild" ���쐬���Ă��܂��B
+[        ] ComputeCustomBuildOutput:
+[        ]   �f�B���N�g�� "E:\example\windows\flutter\ephemeral\cpp_client_wrapper\" ���쐬���Ă��܂��B
+[   +1 ms] CustomBuild:
+[        ]   "'E:\example\build\windows\CMakeFiles\5e831857a981c7d2dba2ae56f63ea501\flutter_assemble.rule'
+�̃r���h�́A'E:\example\build\windows\CMakeFiles\ecc76c55f421e8365816d879c27f773e\flutter_windows.dll.rule' �̃r���h�ɂ���Đ��������
+'E:\EXAMPLE\WINDOWS\FLUTTER\EPHEMERAL\FLUTTER_WINDOWS.DLL' �Ɉˑ����Ă��܂��B�����̍��ڂ����Ńr���h���邱�Ƃ͂ł��܂���B"
+[  +59 ms]   Generating E:/example/windows/flutter/ephemeral/flutter_windows.dll, E:/example/windows/flutter/ephemeral/flutter_export.h,
+E:/example/windows/flutter/ephemeral/flutter_windows.h, E:/example/windows/flutter/ephemeral/flutter_messenger.h,
+E:/example/windows/flutter/ephemeral/flutter_plugin_registrar.h, E:/example/windows/flutter/ephemeral/flutter_texture_registrar.h,
+E:/example/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, E:/example/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc,
+E:/example/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, E:/example/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc,
+E:/example/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_
+[+1177 ms]   [   +1 ms] executing: [C:\src\flutter/] git -c log.showSignature=false log -n 1 --pretty=format:%H
+[  +96 ms]   [ +101 ms] Exit code 0 from: git -c log.showSignature=false log -n 1 --pretty=format:%H
+[        ]   [        ] f468f3366c26a5092eb964a230ce7892fda8f2f8
+[        ]   [        ] executing: [C:\src\flutter/] git tag --points-at f468f3366c26a5092eb964a230ce7892fda8f2f8
+[ +125 ms]   [ +126 ms] Exit code 0 from: git tag --points-at f468f3366c26a5092eb964a230ce7892fda8f2f8
+[        ]   [        ] 3.10.6
+[        ]   [   +1 ms] executing: [C:\src\flutter/] git rev-parse --abbrev-ref HEAD
+[  +97 ms]   [  +97 ms] Exit code 0 from: git rev-parse --abbrev-ref HEAD
+[        ]   [        ] stable
+[  +36 ms]   [  +36 ms] executing: [C:\src\flutter/] git rev-parse --abbrev-ref --symbolic @{upstream}
+[  +94 ms]   [  +93 ms] Exit code 0 from: git rev-parse --abbrev-ref --symbolic @{upstream}
+[        ]   [        ] origin/stable
+[        ]   [        ] executing: [C:\src\flutter/] git ls-remote --get-url origin
+[ +101 ms]   [ +102 ms] Exit code 0 from: git ls-remote --get-url origin
+[        ]   [        ] https://github.com/flutter/flutter.git
+[  +13 ms]   [  +14 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ]   [   +1 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +48 ms]   [  +49 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ]   [   +1 ms] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[  +22 ms]   [  +25 ms] Initializing file store
+[  +12 ms]   [  +12 ms] Skipping target: gen_localizations
+[   +6 ms]   [   +6 ms] gen_dart_plugin_registrant: Starting due to {InvalidatedReasonKind.inputChanged: The following inputs have updated contents:
+E:\example\.dart_tool\package_config_subset}
+[   +1 ms]   [   +2 ms] unpack_windows: Starting due to {}
+[ +817 ms]   [ +817 ms] unpack_windows: Complete
+[+3801 ms]   [+3801 ms] gen_dart_plugin_registrant: Complete
+[  +27 ms]   [  +27 ms] kernel_snapshot: Starting due to {}
+[   +4 ms]   [   +4 ms] C:\src\flutter\bin\cache\dart-sdk\bin\dart.exe --disable-dart-dev C:\src\flutter\bin\cache\dart-sdk\bin\snapshots\frontend_server.dart.snapshot
+--sdk-root C:\src\flutter\bin\cache\artifacts\engine\common\flutter_patched_sdk/ --target=flutter --no-print-incremental-dependencies -DFLUTTER_WEB_AUTO_DETECT=true      
+-DFLUTTER_WEB_CANVASKIT_URL=https://www.gstatic.com/flutter-canvaskit/cdbeda788a293fa29665dc3fa3d6e63bd221cb0d/ -Ddart.vm.profile=false -Ddart.vm.product=false
+--enable-asserts --track-widget-creation --packages E:\example\.dart_tool\package_config.json --output-dill
+E:\example\.dart_tool\flutter_build\cd2289f7d52a44108c53d3f1efb32e46\app.dill --depfile
+E:\example\.dart_tool\flutter_build\cd2289f7d52a44108c53d3f1efb32e46\kernel_snapshot.d --incremental --initialize-from-dill
+E:\example\.dart_tool\flutter_build\cd2289f7d52a44108c53d3f1efb32e46\app.dill --verbosity=error package:example/main.dart
+[+5124 ms]   [+5123 ms] kernel_snapshot: Complete
+[ +246 ms]   [ +246 ms] debug_bundle_windows_assets: Starting due to {}
+[  +89 ms]   [  +89 ms] shaderc command: [C:\src\flutter\bin\cache\artifacts\engine\windows-x64\impellerc.exe, --sksl, --iplr,
+--sl=E:\example\build\flutter_assets\shaders/ink_sparkle.frag, --spirv=E:\example\build\flutter_assets\shaders/ink_sparkle.frag.spirv,
+--input=C:\src\flutter\packages\flutter\lib\src\material\shaders\ink_sparkle.frag, --input-type=frag, --include=C:\src\flutter\packages\flutter\lib\src\material\shaders, 
+--include=C:\src\flutter\bin\cache\artifacts\engine\windows-x64\shader_lib]
+[ +360 ms]   [ +360 ms] debug_bundle_windows_assets: Complete
+[ +263 ms]   [ +263 ms] Persisting file store
+[  +18 ms]   [  +18 ms] Done persisting file store
+[   +3 ms]   [   +3 ms] build succeeded.
+[   +8 ms]   [   +8 ms] "flutter assemble" took 10,864ms.
+[ +107 ms]   [ +107 ms] ensureAnalyticsSent: 99ms
+[        ]   [        ] Running 0 shutdown hooks
+[        ]   [        ] Shutdown hooks complete
+[        ]   [        ] exiting with code 0
+[  +41 ms]   Building Custom Rule E:/example/windows/flutter/CMakeLists.txt
+[ +359 ms] FinalizeBuildStatus:
+[        ]   �t�@�C�� "x64\Debug\flutter_assemble\flutter_assemble.tlog\unsuccessfulbuild" ���폜���Ă��܂��B
+[        ]   "x64\Debug\flutter_assemble\flutter_assemble.tlog\flutter_assemble.lastbuildstate" �̃^�b�` �^�X�N�����s���Ă��܂��B
+[        ] �v���W�F�N�g "E:\example\build\windows\flutter\flutter_assemble.vcxproj" (����̃^�[�Q�b�g) �̃r���h���������܂����B
+[  +51 ms] �v���W�F�N�g "E:\example\build\windows\runner\example.vcxproj" (4) �́A�m�[�h 1 ��� "E:\example\build\windows\flutter\flutter_wrapper_app.vcxproj" (6)
+���r���h���Ă��܂� (����̃^�[�Q�b�g)�B
+[   +1 ms] PrepareForBuild:
+[        ]   �f�B���N�g�� "flutter_wrapper_app.dir\Debug\" ���쐬���Ă��܂��B
+[   +3 ms]   �f�B���N�g�� "E:\example\build\windows\flutter\Debug\" ���쐬���Ă��܂��B
+[        ]   �f�B���N�g�� "flutter_wrapper_app.dir\Debug\flutter_.9A10C3B1.tlog\" ���쐬���Ă��܂��B
+[        ] InitializeBuildStatus:
+[        ]   "AlwaysCreate" ���w�肳�ꂽ���� "flutter_wrapper_app.dir\Debug\flutter_.9A10C3B1.tlog\unsuccessfulbuild" ���쐬���Ă��܂��B
+[  +40 ms] CustomBuild:
+[        ]   Building Custom Rule E:/example/windows/flutter/CMakeLists.txt
+[ +139 ms] ClCompile:
+[        ]   E:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\x64\CL.exe /c
+/IE:\example\windows\flutter\ephemeral\cpp_client_wrapper\include /IE:\example\windows\flutter\ephemeral /Zi /nologo /W4 /WX /diagnostics:column /Od /Ob0 /D _UNICODE /D  
+UNICODE /D WIN32 /D _WINDOWS /D _HAS_EXCEPTIONS=0 /D _DEBUG /D UNICODE /D _UNICODE /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t
+/Zc:forScope /Zc:inline /GR /std:c++17 /Fo"flutter_wrapper_app.dir\Debug\\" /Fd"E:\example\build\windows\flutter\Debug\flutter_wrapper_app.pdb" /external:W4 /Gd /TP      
+/wd4100 /errorReport:queue E:\example\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc
+E:\example\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc E:\example\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc
+E:\example\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc
+[ +858 ms]   core_implementations.cc
+[ +735 ms]   standard_codec.cc
+[ +769 ms]   flutter_engine.cc
+[+1193 ms]   flutter_view_controller.cc
+[ +481 ms]   �R�[�h�𐶐���...
+[ +314 ms] Lib:
+[        ]   E:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\x64\Lib.exe
+/OUT:"E:\example\build\windows\flutter\Debug\flutter_wrapper_app.lib" /NOLOGO /MACHINE:X64  /machine:x64 flutter_wrapper_app.dir\Debug\core_implementations.obj
+[        ]   flutter_wrapper_app.dir\Debug\standard_codec.obj
+[        ]   flutter_wrapper_app.dir\Debug\flutter_engine.obj
+[        ]   flutter_wrapper_app.dir\Debug\flutter_view_controller.obj
+[ +987 ms]   flutter_wrapper_app.vcxproj -> E:\example\build\windows\flutter\Debug\flutter_wrapper_app.lib
+[   +6 ms] FinalizeBuildStatus:
+[        ]   �t�@�C�� "flutter_wrapper_app.dir\Debug\flutter_.9A10C3B1.tlog\unsuccessfulbuild" ���폜���Ă��܂��B
+[        ]   "flutter_wrapper_app.dir\Debug\flutter_.9A10C3B1.tlog\flutter_wrapper_app.lastbuildstate" �̃^�b�` �^�X�N�����s���Ă��܂��B
+[        ] �v���W�F�N�g "E:\example\build\windows\flutter\flutter_wrapper_app.vcxproj" (����̃^�[�Q�b�g) �̃r���h���������܂����B
+[   +5 ms] PrepareForBuild:
+[        ]   �f�B���N�g�� "example.dir\Debug\" ���쐬���Ă��܂��B
+[        ]   �f�B���N�g�� "E:\example\build\windows\runner\Debug\" ���쐬���Ă��܂��B
+[        ]   �f�B���N�g�� "example.dir\Debug\example.tlog\" ���쐬���Ă��܂��B
+[        ] InitializeBuildStatus:
+[        ]   "AlwaysCreate" ���w�肳�ꂽ���� "example.dir\Debug\example.tlog\unsuccessfulbuild" ���쐬���Ă��܂��B
+[  +37 ms] CustomBuild:
+[        ]   Building Custom Rule E:/example/windows/runner/CMakeLists.txt
+[ +110 ms] ClCompile:
+[        ]   E:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\x64\CL.exe /c /IE:\example\windows
+/IE:\example\windows\flutter\ephemeral /IE:\example\windows\flutter\ephemeral\cpp_client_wrapper\include /Zi /nologo /W4 /WX /diagnostics:column /Od /Ob0 /D _UNICODE /D  
+UNICODE /D WIN32 /D _WINDOWS /D _HAS_EXCEPTIONS=0 /D _DEBUG /D "FLUTTER_VERSION=\"1.0.0+1\"" /D FLUTTER_VERSION_MAJOR=1 /D FLUTTER_VERSION_MINOR=0 /D
+FLUTTER_VERSION_PATCH=0 /D FLUTTER_VERSION_BUILD=1 /D NOMINMAX /D UNICODE /D _UNICODE /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t       
+/Zc:forScope /Zc:inline /GR /std:c++17 /Fo"example.dir\Debug\\" /Fd"example.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /wd4100 /errorReport:queue
+E:\example\windows\runner\flutter_window.cpp E:\example\windows\runner\main.cpp E:\example\windows\runner\utils.cpp E:\example\windows\runner\win32_window.cpp
+E:\example\windows\flutter\generated_plugin_registrant.cc
+[  +56 ms]   flutter_window.cpp
+[ +539 ms]   main.cpp
+[ +408 ms]   utils.cpp
+[ +425 ms]   win32_window.cpp
+[ +367 ms]   generated_plugin_registrant.cc
+[ +117 ms]   �R�[�h�𐶐���...
+[ +219 ms] ResourceCompile:
+[        ]   C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x64\rc.exe /D _UNICODE /D UNICODE /D WIN32 /D _DEBUG /D _WINDOWS /D _HAS_EXCEPTIONS=0 /D
+"FLUTTER_VERSION=\\\"1.0.0+1\\\"" /D FLUTTER_VERSION_MAJOR=1 /D FLUTTER_VERSION_MINOR=0 /D FLUTTER_VERSION_PATCH=0 /D FLUTTER_VERSION_BUILD=1 /D NOMINMAX /D UNICODE /D   
+_UNICODE /D "CMAKE_INTDIR=\\\"Debug\\\"" /l"0x0409" /IE:\example\windows /IE:\example\windows\flutter\ephemeral
+/IE:\example\windows\flutter\ephemeral\cpp_client_wrapper\include /nologo /fo"example.dir\Debug\Runner.res" E:\example\windows\runner\Runner.rc
+[ +391 ms] Link:
+[        ]   E:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE
+/OUT:"E:\example\build\windows\runner\Debug\example.exe" /INCREMENTAL /ILK:"example.dir\Debug\example.ilk" /NOLOGO ..\flutter\Debug\flutter_wrapper_app.lib dwmapi.lib    
+E:\example\windows\flutter\ephemeral\flutter_windows.dll.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib      
+advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:E:\example\windows\runner\runner.exe.manifest /DEBUG
+/PDB:"E:/example/build/windows/runner/Debug/example.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/example/build/windows/runner/Debug/example.lib"   
+/MACHINE:X64  /machine:x64 example.dir\Debug\Runner.res
+[   +1 ms]   example.dir\Debug\flutter_window.obj
+[        ]   example.dir\Debug\main.obj
+[        ]   example.dir\Debug\utils.obj
+[        ]   example.dir\Debug\win32_window.obj
+[        ]   example.dir\Debug\generated_plugin_registrant.obj
+[ +526 ms]   example.vcxproj -> E:\example\build\windows\runner\Debug\example.exe
+[   +3 ms] FinalizeBuildStatus:
+[        ]   �t�@�C�� "example.dir\Debug\example.tlog\unsuccessfulbuild" ���폜���Ă��܂��B
+[        ]   "example.dir\Debug\example.tlog\example.lastbuildstate" �̃^�b�` �^�X�N�����s���Ă��܂��B
+[        ] �v���W�F�N�g "E:\example\build\windows\runner\example.vcxproj" (����̃^�[�Q�b�g) �̃r���h���������܂����B
+[  +12 ms] �v���W�F�N�g "E:\example\build\windows\ALL_BUILD.vcxproj" (3) �́A�m�[�h 1 ��� "E:\example\build\windows\flutter\flutter_wrapper_plugin.vcxproj" (7)
+���r���h���Ă��܂� (����̃^�[�Q�b�g)�B
+[        ] PrepareForBuild:
+[        ]   �f�B���N�g�� "flutter_wrapper_plugin.dir\Debug\" ���쐬���Ă��܂��B
+[        ]   �f�B���N�g�� "flutter_wrapper_plugin.dir\Debug\flutter_.33B27C5C.tlog\" ���쐬���Ă��܂��B
+[        ] InitializeBuildStatus:
+[        ]   "AlwaysCreate" ���w�肳�ꂽ���� "flutter_wrapper_plugin.dir\Debug\flutter_.33B27C5C.tlog\unsuccessfulbuild" ���쐬���Ă��܂��B
+[  +38 ms] CustomBuild:
+[        ]   Building Custom Rule E:/example/windows/flutter/CMakeLists.txt
+[ +107 ms] ClCompile:
+[        ]   E:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\x64\CL.exe /c
+/IE:\example\windows\flutter\ephemeral\cpp_client_wrapper\include /IE:\example\windows\flutter\ephemeral /Zi /nologo /W4 /WX /diagnostics:column /Od /Ob0 /D _UNICODE /D  
+UNICODE /D WIN32 /D _WINDOWS /D _HAS_EXCEPTIONS=0 /D _DEBUG /D UNICODE /D _UNICODE /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t
+/Zc:forScope /Zc:inline /GR /std:c++17 /Fo"flutter_wrapper_plugin.dir\Debug\\" /Fd"E:\example\build\windows\flutter\Debug\flutter_wrapper_plugin.pdb" /external:W4 /Gd /TP/wd4100 /errorReport:queue E:\example\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc
+E:\example\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc E:\example\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc
+[  +54 ms]   core_implementations.cc
+[ +359 ms]   standard_codec.cc
+[ +513 ms]   plugin_registrar.cc
+[ +281 ms]   �R�[�h�𐶐���...
+[ +161 ms] Lib:
+[        ]   E:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\x64\Lib.exe
+/OUT:"E:\example\build\windows\flutter\Debug\flutter_wrapper_plugin.lib" /NOLOGO /MACHINE:X64  /machine:x64 flutter_wrapper_plugin.dir\Debug\core_implementations.obj     
+[        ]   flutter_wrapper_plugin.dir\Debug\standard_codec.obj
+[        ]   flutter_wrapper_plugin.dir\Debug\plugin_registrar.obj
+[ +226 ms]   flutter_wrapper_plugin.vcxproj -> E:\example\build\windows\flutter\Debug\flutter_wrapper_plugin.lib
+[   +3 ms] FinalizeBuildStatus:
+[        ]   �t�@�C�� "flutter_wrapper_plugin.dir\Debug\flutter_.33B27C5C.tlog\unsuccessfulbuild" ���폜���Ă��܂��B
+[        ]   "flutter_wrapper_plugin.dir\Debug\flutter_.33B27C5C.tlog\flutter_wrapper_plugin.lastbuildstate" �̃^�b�` �^�X�N�����s���Ă��܂��B
+[        ] �v���W�F�N�g "E:\example\build\windows\flutter\flutter_wrapper_plugin.vcxproj" (����̃^�[�Q�b�g) �̃r���h���������܂����B
+[   +1 ms] PrepareForBuild:
+[        ]   �f�B���N�g�� "x64\Debug\ALL_BUILD\" ���쐬���Ă��܂��B
+[        ]   �f�B���N�g�� "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\" ���쐬���Ă��܂��B
+[   +1 ms] InitializeBuildStatus:
+[        ]   "AlwaysCreate" ���w�肳�ꂽ���� "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild" ���쐬���Ă��܂��B
+[  +48 ms] CustomBuild:
+[        ]   Building Custom Rule E:/example/windows/CMakeLists.txt
+[ +110 ms] FinalizeBuildStatus:
+[        ]   �t�@�C�� "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild" ���폜���Ă��܂��B
+[        ]   "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\ALL_BUILD.lastbuildstate" �̃^�b�` �^�X�N�����s���Ă��܂��B
+[        ] �v���W�F�N�g "E:\example\build\windows\ALL_BUILD.vcxproj" (����̃^�[�Q�b�g) �̃r���h���������܂����B
+[        ] PrepareForBuild:
+[        ]   �f�B���N�g�� "x64\Debug\INSTALL\" ���쐬���Ă��܂��B
+[        ]   �f�B���N�g�� "x64\Debug\INSTALL\INSTALL.tlog\" ���쐬���Ă��܂��B
+[   +6 ms] InitializeBuildStatus:
+[        ]   "AlwaysCreate" ���w�肳�ꂽ���� "x64\Debug\INSTALL\INSTALL.tlog\unsuccessfulbuild" ���쐬���Ă��܂��B
+[  +46 ms] PostBuildEvent:
+[        ]   setlocal
+[        ]   "E:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DBUILD_TYPE=Debug -P
+cmake_install.cmake
+[        ]   if %errorlevel% neq 0 goto :cmEnd
+[        ]   :cmEnd
+[        ]   endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+[        ]   :cmErrorLevel
+[        ]   exit /b %1
+[        ]   :cmDone
+[        ]   if %errorlevel% neq 0 goto :VCEnd
+[        ]   :VCEnd
+[ +131 ms]   -- Install configuration: "Debug"
+[        ]   -- Installing: E:/example/build/windows/runner/Debug/data/icudtl.dat
+[   +4 ms]   -- Installing: E:/example/build/windows/runner/Debug/flutter_windows.dll
+[  +52 ms]   -- Installing: E:/example/build/windows/runner/Debug/data/flutter_assets
+[        ]   -- Installing: E:/example/build/windows/runner/Debug/data/flutter_assets/AssetManifest.bin
+[        ]   -- Installing: E:/example/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+[        ]   -- Installing: E:/example/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+[  +10 ms]   -- Installing: E:/example/build/windows/runner/Debug/data/flutter_assets/fonts
+[        ]   -- Installing: E:/example/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+[   +1 ms]   -- Installing: E:/example/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+[  +54 ms]   -- Installing: E:/example/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+[   +1 ms]   -- Installing: E:/example/build/windows/runner/Debug/data/flutter_assets/packages
+[        ]   -- Installing: E:/example/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons
+[        ]   -- Installing: E:/example/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets
+[        ]   -- Installing: E:/example/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+[        ]   -- Installing: E:/example/build/windows/runner/Debug/data/flutter_assets/shaders
+[        ]   -- Installing: E:/example/build/windows/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag
+[   +7 ms] FinalizeBuildStatus:
+[        ]   �t�@�C�� "x64\Debug\INSTALL\INSTALL.tlog\unsuccessfulbuild" ���폜���Ă��܂��B
+[        ]   "x64\Debug\INSTALL\INSTALL.tlog\INSTALL.lastbuildstate" �̃^�b�` �^�X�N�����s���Ă��܂��B
+[        ] �v���W�F�N�g "E:\example\build\windows\INSTALL.vcxproj" (����̃^�[�Q�b�g) �̃r���h���������܂����B
+[   +1 ms] �r���h�ɐ������܂����B
+[        ]     0 �̌x��
+[        ]     0 �G���[
+[        ] �o�ߎ��� 00:00:24.69
+[  +15 ms] Building Windows application... (completed in 30.5s)
+[   +2 ms] √  Built build\windows\runner\Debug\example.exe.
+[+1724 ms] VM Service URL on device: http://127.0.0.1:52781/sKlYRv1p3Q0=/
+[   +1 ms] Caching compiled dill
+[  +40 ms] Connecting to service protocol: http://127.0.0.1:52781/sKlYRv1p3Q0=/
+[  +60 ms] Launching a Dart Developer Service (DDS) instance at http://127.0.0.1:0, connecting to VM service at http://127.0.0.1:52781/sKlYRv1p3Q0=/.
+[  +32 ms] DDS is listening at http://127.0.0.1:52784/396NPzI4viY=/.
+[  +26 ms] Successfully connected to service protocol: http://127.0.0.1:52781/sKlYRv1p3Q0=/
+[ +343 ms] DevFS: Creating new filesystem on the device (null)
+[   +9 ms] DevFS: Created new filesystem on the device (file:///C:/Users/***/AppData/Local/Temp/example4aa86e83/example/)
+[   +1 ms] Updating assets
+[  +47 ms] Syncing files to device Windows...
+[   +2 ms] Compiling dart to kernel with 0 updated files
+[        ] Processing bundle.
+[   +1 ms] <- recompile package:example/main.dart 2f292085-a490-4d43-a00a-02ec9d65a5f3
+[        ] <- 2f292085-a490-4d43-a00a-02ec9d65a5f3
+[   +1 ms] Bundle processing done.
+[  +92 ms] Updating files.
+[        ] DevFS: Sync finished
+[        ] Syncing files to device Windows... (completed in 98ms)
+[        ] Synced 0.0MB.
+[        ] <- accept
+[   +1 ms] Connected to _flutterView/0x21e5ada40f0.
+[   +1 ms] Flutter run key commands.
+[        ] r Hot reload. 
+[        ] R Hot restart.
+[        ] h List all available interactive commands.
+[        ] d Detach (terminate "flutter run" but leave application running).
+[        ] c Clear the screen
+[        ] q Quit (terminate the application on the device).
+[        ] A Dart VM Service on Windows is available at: http://127.0.0.1:52784/396NPzI4viY=/
+[        ] The Flutter DevTools debugger and profiler on Windows is available at: http://127.0.0.1:9101?uri=http://127.0.0.1:52784/396NPzI4viY=/
+[+51290 ms] Service protocol connection closed.
+[   +1 ms] Lost connection to device.
+[        ] DevFS: Deleting filesystem on the device (file:///C:/Users/***/AppData/Local/Temp/example4aa86e83/example/)
+[ +253 ms] Ignored error while cleaning up DevFS: TimeoutException after 0:00:00.250000: Future not completed
+
+[   +2 ms] "flutter run" took 94,057ms.
+[  +88 ms] ensureAnalyticsSent: 84ms
+[        ] Running 1 shutdown hook
+[   +5 ms] Shutdown hooks complete
+[        ] exiting with code 0
